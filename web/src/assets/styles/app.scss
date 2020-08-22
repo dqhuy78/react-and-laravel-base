@@ -1,0 +1,64 @@
+@import "./theme/variables";
+
+body {
+    color: $dark;
+
+    .ant-form-item-label {
+        line-height: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, span, strong, em {
+        margin: 0;
+        padding: 0;
+    }
+
+    svg {
+        display: inline-block;
+    }
+
+    .head-1 {
+        font-size: 96px;
+        line-height: 1;
+        letter-spacing: -0.01562em;
+    }
+    .head-2 {
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -0.00833em;
+    }
+    .head-3 {
+        font-size: 48px;
+        line-height: 1.04;
+        letter-spacing: 0em;
+    }
+    .head-4 {
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.00735em;
+    }
+    .head-5 {
+        font-size: 24px;
+        line-height: 1.33;
+        letter-spacing: 0em;
+    }
+    .head-6 {
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+    }
+    .title {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
+    }
+    .body {
+        font-size: 15px;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+    }
+    .subtitle {
+        font-size: 13px;
+        line-height: 1.66;
+        letter-spacing: 0.03333em;
+    }
+}
