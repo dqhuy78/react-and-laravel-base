@@ -16,6 +16,7 @@ class UserResource extends ShareResource
     {
         return [
             'id' => $this->id,
+            'email' => $this->email,
         ];
     }
 }

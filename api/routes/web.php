@@ -10,9 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// auth()->login(\App\Models\User::find(58));
 // phpcs:disable
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('api')->group(function () {
+    Route::get('web-init', 'WebInitController');
 });
 // phpcs:enable
-Route::get('{path?}', 'RenderWebView')->where('path', '[a-zA-Z0-9-/]+');
+Route::get('{path?}', 'WebRenderController')->where('path', '[a-zA-Z0-9-/]+');

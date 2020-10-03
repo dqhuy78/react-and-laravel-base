@@ -1,0 +1,52 @@
+{
+  "name": "web-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.6.6",
+    "autoprefixer": "^10.0.1",
+    "axios": "^0.20.0",
+    "babel-plugin-import": "^1.13.0",
+    "craco": "^0.0.3",
+    "craco-antd": "^1.18.1",
+    "http-proxy-middleware": "^1.0.5",
+    "path": "^0.12.7",
+    "postcss-cli": "^8.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "tailwindcss": "^1.8.10",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpackbar": "^4.0.0"
+  },
+  "scripts": {
+    "build:style": "tailwind build src/assets/styles/config/tailwind.css -o src/assets/styles/tailwind.css",
+    "prebuild": "yarn build:style",
+    "prestart": "yarn build:style",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0"
+  }
+}
