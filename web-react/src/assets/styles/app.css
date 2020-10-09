@@ -1,7 +1,13 @@
 .ant-btn {
     display: flex !important;
     align-items: center !important;
-    border: 1px solid theme('colors.primary') !important;
+    background-color: theme('colors.primary') !important;
+}
+
+div {
+    p {
+        color: theme('colors.primary');
+    }
 }
 
 .scroll::-webkit-scrollbar {

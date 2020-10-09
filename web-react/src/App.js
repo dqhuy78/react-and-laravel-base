@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Button } from 'antd';
 
 import './assets/styles/tailwind.css';
-import './assets/styles/app.less';
+import './assets/styles/app.css';
 
 function App() {
 
@@ -20,6 +20,9 @@ function App() {
         <div className="w-screen h-screen flex items-center justify-center">
             <div className="box-shadow">Button</div>
             <Button type="primary">OK</Button>
+            <div>
+                <p>okokok</p>
+            </div>
         </div>
     );
 }
